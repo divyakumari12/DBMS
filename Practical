@@ -1,0 +1,14 @@
+create table info (Regno int, Name varchar2(20), cgpa number, city varchar2(10))
+alter table info drop column city
+select * from student
+select name from info
+select Regno, Name from info
+insert into info(Regno, Name) values(1, 'Divya')
+insert into info values(2, 'Armaan', 10)
+insert all
+into info (Regno, Name) values(3,'Priya')
+into info (Regno, Name) values(4,'Swati')
+into info (Regno, Name) values(5,'Sweta')
+select * from dual
+select regno+1000 from info
+select Regno from info where regno=40
