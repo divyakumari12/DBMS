@@ -1,0 +1,10 @@
+create table person (id int, name varchar2(20), salary number, city varchar2(10))
+insert all
+into person (id, name, salary, city) values(1, 'Divya', 50000, 'Patna')
+into person (id, name, salary, city) values(2, 'Sweta', 60000, 'Pune')
+into person (id, name, salary, city) values(3, 'Swati', 80000, 'Orissa')
+into person  (id, name, salary, city)values(4, 'Priya', 60000, 'Delhi')
+into person (id, name, salary, city)values(5, 'Armaan', 90000, 'Mumbai')
+select * from dual
+select name from person where salary>10000
+alter table person add(state varchar2(20))
