@@ -1,0 +1,19 @@
+Create table Accounts(id number, name varchar2(20), regno number, balance number, cgpa number)
+
+insert all
+into Accounts(id, name, regno, balance, cgpa) values(1, 'ABC', 1001, 5000, 8)
+into Accounts(id, name, regno, balance, cgpa) values(2, 'DEF', 1002, 8000, 10)
+into Accounts(id, name, regno, balance, cgpa) values(3, 'GHI', 1003, 9000, 9)
+into Accounts(id, name, regno, balance, cgpa) values(4, 'JKL', 1004, 10000, 7)
+into Accounts(id, name, regno, balance, cgpa) values(5, 'MNO', 1005, 9500, 6)
+select * from dual
+
+update Accounts set balance=case when cgpa>8 then balance+1000
+when cgpa<8 then balance+500
+end
+
+alter table Accounts modify name varchar2(30)
+
+delete from accounts where balance>5000
+
+
