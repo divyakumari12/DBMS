@@ -1,0 +1,24 @@
+create table customer(cid number primary key, name varchar2(20), income number)
+
+insert all
+into customer(cid, name, income) values(1, 'ABC', 50000)
+into customer(cid, name, income) values(2, 'DEF', 40000)
+into customer(cid, name, income) values(3, 'HUN', 80000)
+into customer(cid, name, income) values(4, 'GHI', 20000)
+select * from dual
+
+select * from customer where income>50000 
+
+create table customer1 as select * from customer where 1=2;
+
+create table customer2 as select * from customer where 1=2;
+
+insert into customer2
+select * from customer1
+where cid>2
+
+
+alter table customer add rating varchar2(2)
+
+update customer set rating='A'
+
